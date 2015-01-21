@@ -13,11 +13,11 @@ app.config(function ($routeProvider) {
         .when('/alldeliveries', {
             templateUrl: 'views/alldeliveries.html'
         })
-        .when('/allcollections', {
-            templateUrl: 'views/allcollections.html'
-        })
         .when('/projects', {
             templateUrl: 'views/projects.html'
+        })
+        .when('/reporting', {
+            templateUrl: 'views/reporting.html'
         })
         .otherwise({
             redirectTo: '/'
