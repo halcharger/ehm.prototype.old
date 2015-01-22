@@ -3,8 +3,9 @@
     <div class="container">
         <!-- BEGIN PAGE TITLE -->
         <div class="page-title">
-            <h1><i class="fa fa-sign-in fa-2x"></i><i class="fa fa-sign-out fa-2x"></i> All Deliveries & Collections
-                <small>search, filter and view all your deliveries</small>
+            <h1><i class="fa fa-sign-in fa-2x"></i><i class="fa fa-sign-out fa-2x"></i> Shopping Mall \ Ground Floor \
+                West Wing - 08/02/2015 DELIVERY
+                <small>edit specific delivery / collection details</small>
             </h1>
         </div>
         <!-- END PAGE TITLE -->
@@ -16,96 +17,92 @@
     <div class="container">
 
         <div class="portlet light">
-            <div class="portlet-body flip-scroll">
-                <div class="row" style="margin-top: 10px">
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Project:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">Project One</option>
-                                <option value="Tony Blair">Shopping Mall</option>
-                                <option value="Ken Livingston">Umhlanga Home</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Site:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">Site One</option>
-                                <option value="Tony Blair">Site Two</option>
-                                <option value="Ken Livingston">Ground Floor</option>
-                                <option value="Ken Livingston">47 Rock Drive</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Structure:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">South Building</option>
-                                <option value="Tony Blair">North Building</option>
-                                <option value="Ken Livingston">West Wing</option>
-                                <option value="Ken Livingston">Main Building</option>
-                                <option value="Ken Livingston">Complex 1</option>
-                            </select>
-                        </div>
-                    </div>
+            <div class="portlet-body form">
+                    <form class="horizontal-form">
+                        <div class="form-body">
+                            <h3 class="form-section">Delivery Details</h3>
 
-                </div>
-                <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon1">Delivery #:</span>
-                            <input type="text" class="form-control" aria-describedby="basic-addon2">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Delivery Date:</span>
-                            <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
-                                <input type="text" class="form-control" readonly="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"><strong>Project \ Site \ Structure</strong></label>
+                                        <select class="form-control">
+                                            <option>Project One \ Site One \ Main Building</option>
+                                            <option>Project One \ Site Two \ South Building</option>
+                                            <option selected>Shopping Mall \ Ground Floor \ West Wing</option>
+                                            <option>Shopping Mall \ Site One \ Complex 1</option>
+                                            <option>Shopping Mall \ Site Two \ Main Building</option>
+                                            <option>Umhlanga Home \ 47 Rock Drive \ Main House</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--/span-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"><strong>Delivery Date</strong></label>
+                                        <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
+                                            <input type="text" class="form-control" readonly="" value="08/02/2015">
 												<span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/span-->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"><strong>Delivery #</strong></label>
+                                        <input type="text" id="deliveryNumber" value="GFFDRTYTRY0004" class="form-control">
+                                    </div>
+                                </div>
+                                <!--/span-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"><strong>Collection Date</strong></label>
+                                        <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
+                                            <input type="text" class="form-control" readonly="" value="21/09/2015">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+                                        </div>
+															<span class="help-block">
+															This is the date the collection is scheduled for. Once collection happens you can update this date if required.</span>
+                                    </div>
+                                </div>
+                                <!--/span-->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label"><strong>Comments</strong></label>
+                                        <textarea rows="4" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-right">
+                                    <button type="submit" class="btn btn-circle blue">Save Changes</button>
+                                    <button type="button" class="btn btn-circle default">Cancel</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Status:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">all on site</option>
-                                <option value="Tony Blair">all collected</option>
-                                <option value="Ken Livingston">partially collected</option>
-                                <option value="Ken Livingston">collection overdue</option>
-                            </select>
-                        </div>
-                    </div>
+                    </form>
 
-                </div>
+                <h3 class="form-section">Delivery Line Items <small><span class="label label-warning">partially collected</span></small></h3>
+
                 <table class="table table-bordered table-striped table-condensed flip-content">
                     <thead class="flip-content">
                     <tr>
                         <th>
-                            Project
+                            Code
                         </th>
-                        <th>
-                            Site
+                        <th style="width:30%">
+                            Description
                         </th>
-                        <th>
-                            Structure
-                        </th>
-                        <th>Delivery #</th>
-                        <th>
-                            Delivery Date
-                        </th>
-                        <th>
-                            Collection Date
+                        <th class="numeric">
+                            Qty
                         </th>
                         <th class="numeric">
                             Tonnage
@@ -115,7 +112,8 @@
                         </th>
                         <th>Status</th>
                         <th>
-                            <a href="#/editdelivery" class="btn green-haze btn-circle"><i class="fa fa-plus"></i> Add</a>
+                            <a href="#/editdelivery" class="btn green-haze btn-circle"><i class="fa fa-plus"></i>
+                                Add</a>
 
                         </th>
                     </tr>
@@ -123,22 +121,13 @@
                     <tbody>
                     <tr>
                         <td>
-                            Project One
+                            ASD001
                         </td>
                         <td>
-                            Site Two
+                            Long Pipe - 100m
                         </td>
                         <td class="numeric">
-                            South Building
-                        </td>
-                        <td>
-                            100004
-                        </td>
-                        <td>
-                            28/01/2015
-                        </td>
-                        <td>
-                            01/09/2015
+                            500
                         </td>
                         <td class="numeric">
                             9,395
@@ -154,22 +143,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            FRER45556
                         </td>
                         <td>
-                            Site one
+                            Short Pipe - 10m
                         </td>
                         <td class="numeric">
-                            Main Building
-                        </td>
-                        <td>
-                            567899
-                        </td>
-                        <td>
-                            02/01/2015
-                        </td>
-                        <td>
-                            15/08/2015
+                            489
                         </td>
                         <td class="numeric">
                             7,896
@@ -185,22 +165,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Shopping Mall
+                            VFGHG-444
                         </td>
                         <td>
-                            Ground Floor
+                            Flexi Structure 200
                         </td>
                         <td class="numeric">
-                            West Wing
-                        </td>
-                        <td>
-                            392677
-                        </td>
-                        <td>
-                            01/01/2015
-                        </td>
-                        <td>
-                            <span class="label label-danger">15/01/2015</span>
+                            125
                         </td>
                         <td class="numeric">
                             1,435
@@ -208,7 +179,7 @@
                         <td class="numeric">
                             235
                         </td>
-                        <td><span class="label label-danger">collection overdue</span></td>
+                        <td><span class="label label-warning">partially collected (100)</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -216,22 +187,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Umhlanga Home
+                            TRYU-5667
                         </td>
                         <td>
-                            47 Rock Drive
+                            Scaffholding - 50
                         </td>
                         <td class="numeric">
-                            Main House
-                        </td>
-                        <td>
-                            3981275
-                        </td>
-                        <td>
-                            20/02/2015
-                        </td>
-                        <td>
-                            14/09/2015
+                            412
                         </td>
                         <td class="numeric">
                             789
@@ -247,22 +209,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Shopping Mall
+                            DEWS-4456
                         </td>
                         <td>
-                            Site Two
+                            Flexi Scaff
                         </td>
                         <td class="numeric">
-                            Main Building
-                        </td>
-                        <td>
-                            23577
-                        </td>
-                        <td>
-                            18/02/2015
-                        </td>
-                        <td>
-                            01/05/2015
+                            78
                         </td>
                         <td class="numeric">
                             5,112
@@ -270,7 +223,7 @@
                         <td class="numeric">
                             455
                         </td>
-                        <td><span class="label label-warning">partially collected</span></td>
+                        <td><span class="label label-warning">partially collected (51)</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -278,22 +231,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            SAWQ-556
                         </td>
                         <td>
-                            Site Two
+                            Wall Support
                         </td>
                         <td class="numeric">
-                            North Building
-                        </td>
-                        <td>
-                            3467468
-                        </td>
-                        <td>
-                            20/04/2015
-                        </td>
-                        <td>
-                            13/08/2015
+                            23
                         </td>
                         <td class="numeric">
                             7,231
@@ -309,22 +253,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            RET-441
                         </td>
                         <td>
-                            Site One
+                            Short Pipe - 20m
                         </td>
                         <td class="numeric">
-                            Main Building
-                        </td>
-                        <td>
-                            4578699
-                        </td>
-                        <td>
-                            30/01/2015
-                        </td>
-                        <td>
-                            09/09/2015
+                            488
                         </td>
                         <td class="numeric">
                             698
@@ -340,22 +275,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Shopping Mall Project
+                            LKIIO-998
                         </td>
                         <td>
-                            Site One
+                            Brace002 - 45
                         </td>
                         <td class="numeric">
-                            Complex 1
-                        </td>
-                        <td>
-                            34684367
-                        </td>
-                        <td>
-                            20/02/2015
-                        </td>
-                        <td>
-                            05/06/2015
+                            779
                         </td>
                         <td class="numeric">
                             65
@@ -371,22 +297,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            SDFG88-2
                         </td>
                         <td>
-                            Site Two
+                            Pipe Support
                         </td>
                         <td class="numeric">
-                            South Building
-                        </td>
-                        <td>
-                            22334548
-                        </td>
-                        <td>
-                            13/01/2015
-                        </td>
-                        <td>
-                            01/09/2015
+                            630
                         </td>
                         <td class="numeric">
                             300
@@ -394,7 +311,7 @@
                         <td class="numeric">
                             711
                         </td>
-                        <td><span class="label label-warning">partially collected</span></td>
+                        <td><span class="label label-warning">partially collected (510)</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -402,22 +319,13 @@
                     </tr>
                     <tr>
                         <td>
-                            Unhlanga Home Project
+                            EEE-4355
                         </td>
                         <td>
-                            47 Rock Drive
+                            Cememnt support 002
                         </td>
                         <td class="numeric">
-                            Main House
-                        </td>
-                        <td>
-                            56890268
-                        </td>
-                        <td>
-                            01/03/2015
-                        </td>
-                        <td>
-                            06/09/2015
+                            15
                         </td>
                         <td class="numeric">
                             733
@@ -434,7 +342,7 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th colspan="6" class="text-right">Totals: </th>
+                        <th colspan="3" class="text-right">Totals: </th>
                         <th>23, 456</th>
                         <th>14, 422</th>
                         <th colspan="2"></th>
@@ -452,8 +360,7 @@
                             <ul class="pagination">
                                 <li class="paginate_button previous disabled" aria-controls="sample_6" tabindex="0"
                                     id="sample_6_previous"><a href=""><i class="fa fa-angle-left"></i></a></li>
-                                <li class="paginate_button active" aria-controls="sample_6" tabindex="0"><a
-                                        href="">1</a></li>
+                                <li class="paginate_button active" aria-controls="sample_6" tabindex="0"><a href="">1</a></li>
                                 <li class="paginate_button " aria-controls="sample_6" tabindex="0"><a href="">2</a>
                                 </li>
                                 <li class="paginate_button " aria-controls="sample_6" tabindex="0"><a href="">3</a>
@@ -470,7 +377,6 @@
                 </div>
             </div>
         </div>
-
 
     </div>
 </div>

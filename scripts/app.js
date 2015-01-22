@@ -19,6 +19,9 @@ app.config(function ($routeProvider) {
         .when('/reporting', {
             templateUrl: 'views/reporting.html'
         })
+        .when('/editdelivery', {
+            templateUrl: 'views/editdelivery.html'
+        })
         .otherwise({
             redirectTo: '/'
         });
