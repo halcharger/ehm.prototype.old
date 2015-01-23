@@ -18,70 +18,83 @@
         <div class="portlet light">
             <div class="portlet-body">
 
-                <div class="actions pull-right">
+                <div class="clearfix">
+                <div class="pull-right">
                     <a class="btn btn-primary" href=""><i class="fa fa-sign-in"></i> Capture New Delivery</a>
-                    <a class="btn btn-success" href=""><i class="fa fa-sign-out fa-rotate-180"></i> Capture New Return</a>
+                    <a class="btn btn-success" href=""><i class="fa fa-sign-out fa-rotate-180"></i> Capture New
+                        Return</a>
+                </div>
                 </div>
 
-                <h2>Filter Movement Records</h2>
-
-                <div class="row" style="margin-top: 10px">
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Movement:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">Delivery</option>
-                                <option value="Tony Blair">Return</option>
-                            </select>
+                <div class="portlet light bordered margin-top-10">
+                    <div class="portlet-title">
+                        <div class="caption font-green-sharp">
+                            <i class="icon-speech font-green-sharp"></i>
+                            <span class="caption-subject bold uppercase"> Filter Movement Records</span>
+                            <span class="caption-helper">weekly stats...</span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Date:</span>
+                    <div class="portlet-body">
+                        <div class="row" style="margin-top: 10px">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Movement:</span>
+                                    <select class="form-control" aria-describedby="basic-addon2">
+                                        <option></option>
+                                        <option value="Arnold">Delivery</option>
+                                        <option value="Tony Blair">Return</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Date:</span>
 
-                            <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
-                                <input type="text" class="form-control" readonly="">
+                                    <div class="input-group input-medium date date-picker"
+                                         data-date-format="dd-mm-yyyy">
+                                        <input type="text" class="form-control" readonly="">
 												<span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i>
                                                 </button>
 												</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Zone:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">South Building</option>
-                                <option value="Tony Blair">North Building</option>
-                                <option value="Ken Livingston">West Wing</option>
-                                <option value="Ken Livingston">Main Building</option>
-                                <option value="Ken Livingston">Complex 1</option>
-                            </select>
-                        </div>
-                    </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Zone:</span>
+                                    <select class="form-control" aria-describedby="basic-addon2">
+                                        <option></option>
+                                        <option value="Arnold">South Building</option>
+                                        <option value="Tony Blair">North Building</option>
+                                        <option value="Ken Livingston">West Wing</option>
+                                        <option value="Ken Livingston">Main Building</option>
+                                        <option value="Ken Livingston">Complex 1</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                </div>
+                        </div>
 
-                <div class="row" style="margin-top:10px; margin-bottom: 10px;">
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon1">Doc #:</span>
-                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                        <div class="row" style="margin-top:10px; margin-bottom: 10px;">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1">Doc #:</span>
+                                    <input type="text" class="form-control" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Supplier:</span>
+                                    <select class="form-control" aria-describedby="basic-addon2">
+                                        <option></option>
+                                        <option value="Arnold">FormScaff</option>
+                                    </select>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Supplier:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">FormScaff</option>
-                            </select>
-                        </div>
-                    </div>
-
                 </div>
 
                 <table class="table table-bordered table-condensed">
