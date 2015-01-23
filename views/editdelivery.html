@@ -3,9 +3,8 @@
     <div class="container">
         <!-- BEGIN PAGE TITLE -->
         <div class="page-title">
-            <h1><i class="fa fa-sign-in fa-2x"></i><i class="fa fa-sign-out fa-2x"></i> Shopping Mall \ Ground Floor \
-                West Wing - 08/02/2015 DELIVERY
-                <small>edit specific delivery / collection details</small>
+            <h1><i class="fa fa-sign-in fa-2x"></i><i class="fa fa-sign-out fa-2x"></i> Shopping Mall Project \ Edit Delivery
+                <small>edit specific movement details</small>
             </h1>
         </div>
         <!-- END PAGE TITLE -->
@@ -23,23 +22,21 @@
                             <h3 class="form-section">Delivery Details</h3>
 
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label"><strong>Project \ Site \ Structure</strong></label>
+                                        <label class="control-label"><strong>Zone</strong></label>
                                         <select class="form-control">
-                                            <option>Project One \ Site One \ Main Building</option>
-                                            <option>Project One \ Site Two \ South Building</option>
-                                            <option selected>Shopping Mall \ Ground Floor \ West Wing</option>
-                                            <option>Shopping Mall \ Site One \ Complex 1</option>
-                                            <option>Shopping Mall \ Site Two \ Main Building</option>
-                                            <option>Umhlanga Home \ 47 Rock Drive \ Main House</option>
+                                            <option>Main Building</option>
+                                            <option>South Building</option>
+                                            <option selected>West Wing</option>
+                                            <option>Complex 1</option>
                                         </select>
                                     </div>
                                 </div>
                                 <!--/span-->
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label"><strong>Delivery Date</strong></label>
+                                        <label class="control-label"><strong>Date</strong></label>
                                         <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
                                             <input type="text" class="form-control" readonly="" value="08/02/2015">
 												<span class="input-group-btn">
@@ -48,30 +45,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--/span-->
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label"><strong>Delivery #</strong></label>
+                                        <label class="control-label"><strong>Document #</strong></label>
                                         <input type="text" id="deliveryNumber" value="GFFDRTYTRY0004" class="form-control">
                                     </div>
                                 </div>
-                                <!--/span-->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label"><strong>Collection Date</strong></label>
-                                        <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
-                                            <input type="text" class="form-control" readonly="" value="21/09/2015">
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-                                        </div>
-															<span class="help-block">
-															This is the date the collection is scheduled for. Once collection happens you can update this date if required.</span>
-                                    </div>
-                                </div>
-                                <!--/span-->
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
@@ -90,7 +69,7 @@
                         </div>
                     </form>
 
-                <h3 class="form-section">Delivery Line Items <small><span class="label label-warning">partially collected</span></small></h3>
+                <h3 class="form-section">Delivery Line Items</h3>
 
                 <table class="table table-bordered table-striped table-condensed flip-content">
                     <thead class="flip-content">
@@ -112,7 +91,6 @@
                         </th>
                         <th>Rate (per day)</th>
                         <th>Cost Per Day</th>
-                        <th>Status</th>
                         <th>
                             <a href="#/editdelivery" class="btn green-haze btn-circle"><i class="fa fa-plus"></i>
                                 Add</a>
@@ -139,7 +117,6 @@
                         </td>
                         <td>R200</td>
                         <td>R10,000</td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -163,7 +140,6 @@
                         </td>
                         <td>R150</td>
                         <td>R7,120</td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -187,7 +163,6 @@
                         </td>
                         <td>R121</td>
                         <td>R10,600</td>
-                        <td><span class="label label-warning">partially collected (100)</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -211,7 +186,6 @@
                         </td>
                         <td>R623</td>
                         <td>R11,450</td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -235,7 +209,6 @@
                         </td>
                         <td>R800</td>
                         <td>R12,987</td>
-                        <td><span class="label label-warning">partially collected (51)</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -259,7 +232,6 @@
                         </td>
                         <td>R1,500</td>
                         <td>R25,631</td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -283,7 +255,6 @@
                         </td>
                         <td>R452</td>
                         <td>R16,200</td>
-                        <td><span class="label label-success">all collected</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -307,7 +278,6 @@
                         </td>
                         <td>R100</td>
                         <td>R77,900</td>
-                        <td><span class="label label-success">all collected</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -331,7 +301,6 @@
                         </td>
                         <td>R420</td>
                         <td>R20,230</td>
-                        <td><span class="label label-warning">partially collected (510)</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -355,7 +324,6 @@
                         </td>
                         <td>R200</td>
                         <td>R3,000</td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/lineItemActionButton.html'"></span>
                         </td>
@@ -367,7 +335,7 @@
                         <th colspan="3" class="text-right">Totals: </th>
                         <th>23, 456</th>
                         <th>14, 422</th>
-                        <th colspan="2"></th>
+                        <th colspan="3"></th>
                     </tr>
                     </tfoot>
                 </table>
