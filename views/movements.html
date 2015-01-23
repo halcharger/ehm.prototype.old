@@ -3,8 +3,8 @@
     <div class="container">
         <!-- BEGIN PAGE TITLE -->
         <div class="page-title">
-            <h1><i class="fa fa-sign-in fa-2x"></i><i class="fa fa-sign-out fa-2x"></i> All Deliveries & Collections
-                <small>search, filter and view all your deliveries</small>
+            <h1><i class="fa fa-exchange fa-2x"></i></i> Shopping Mall Project | Movements
+                <small>view, search and query all your item movements</small>
             </h1>
         </div>
         <!-- END PAGE TITLE -->
@@ -16,34 +16,42 @@
     <div class="container">
 
         <div class="portlet light">
-            <div class="portlet-body flip-scroll">
+            <div class="portlet-body">
+
+                <div class="actions pull-right">
+                    <a class="btn btn-primary" href=""><i class="fa fa-sign-in"></i> Capture New Delivery</a>
+                    <a class="btn btn-success" href=""><i class="fa fa-sign-out fa-rotate-180"></i> Capture New Return</a>
+                </div>
+
+                <h2>Filter Movement Records</h2>
+
                 <div class="row" style="margin-top: 10px">
                     <div class="col-md-4">
                         <div class="input-group">
-                            <span class="input-group-addon">Project:</span>
+                            <span class="input-group-addon">Movement:</span>
                             <select class="form-control" aria-describedby="basic-addon2">
                                 <option></option>
-                                <option value="Arnold">Project One</option>
-                                <option value="Tony Blair">Shopping Mall</option>
-                                <option value="Ken Livingston">Umhlanga Home</option>
+                                <option value="Arnold">Delivery</option>
+                                <option value="Tony Blair">Return</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="input-group">
-                            <span class="input-group-addon">Site:</span>
-                            <select class="form-control" aria-describedby="basic-addon2">
-                                <option></option>
-                                <option value="Arnold">Site One</option>
-                                <option value="Tony Blair">Site Two</option>
-                                <option value="Ken Livingston">Ground Floor</option>
-                                <option value="Ken Livingston">47 Rock Drive</option>
-                            </select>
+                            <span class="input-group-addon">Date:</span>
+
+                            <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
+                                <input type="text" class="form-control" readonly="">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i>
+                                                </button>
+												</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="input-group">
-                            <span class="input-group-addon">Structure:</span>
+                            <span class="input-group-addon">Zone:</span>
                             <select class="form-control" aria-describedby="basic-addon2">
                                 <option></option>
                                 <option value="Arnold">South Building</option>
@@ -56,89 +64,69 @@
                     </div>
 
                 </div>
-                <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+
+                <div class="row" style="margin-top:10px; margin-bottom: 10px;">
                     <div class="col-md-4">
                         <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon1">Delivery #:</span>
+                            <span class="input-group-addon" id="basic-addon1">Doc #:</span>
                             <input type="text" class="form-control" aria-describedby="basic-addon2">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="input-group">
-                            <span class="input-group-addon">Delivery Date:</span>
-                            <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy">
-                                <input type="text" class="form-control" readonly="">
-												<span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">Status:</span>
+                            <span class="input-group-addon">Supplier:</span>
                             <select class="form-control" aria-describedby="basic-addon2">
                                 <option></option>
-                                <option value="Arnold">all on site</option>
-                                <option value="Tony Blair">all collected</option>
-                                <option value="Ken Livingston">partially collected</option>
-                                <option value="Ken Livingston">collection overdue</option>
+                                <option value="Arnold">FormScaff</option>
                             </select>
                         </div>
                     </div>
 
                 </div>
-                <table class="table table-bordered table-striped table-condensed flip-content">
+
+                <table class="table table-bordered table-condensed">
                     <thead class="flip-content">
                     <tr>
-                        <th>
-                            Project
+                        <th style="width:10%">
+                            Movement
                         </th>
                         <th>
-                            Site
+                            Date
                         </th>
                         <th>
-                            Structure
+                            Zone
                         </th>
-                        <th>Delivery #</th>
-                        <th>
-                            Delivery Date
-                        </th>
-                        <th>
-                            Collection Date
+                        <th>Supplier</th>
+                        <th>Doc #</th>
+                        <th>Qty</th>
+                        <th class="numeric">
+                            Mass
                         </th>
                         <th class="numeric">
-                            Tonnage
+                            m<sup>2</sup>
                         </th>
-                        <th class="numeric">
-                            Square Meters
-                        </th>
-                        <th>Status</th>
-                        <th>
-                            <a href="#/editdelivery" class="btn green-haze btn-circle"><i class="fa fa-plus"></i> Add</a>
-
-                        </th>
+                        <th style="width:10%"></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>
-                            Project One
-                        </td>
-                        <td>
-                            Site Two
-                        </td>
-                        <td class="numeric">
-                            South Building
-                        </td>
-                        <td>
-                            100004
+                            <button class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i></button>
                         </td>
                         <td>
                             28/01/2015
                         </td>
                         <td>
-                            01/09/2015
+                            South Building
+                        </td>
+                        <td>
+                            FromScaff
+                        </td>
+                        <td>
+                            34586854
+                        </td>
+                        <td>
+                            354
                         </td>
                         <td class="numeric">
                             9,395
@@ -146,7 +134,6 @@
                         <td class="numeric">
                             65,485
                         </td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -154,22 +141,20 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            <button class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i></button>
                         </td>
                         <td>
-                            Site one
+                            01/02/2015
                         </td>
                         <td class="numeric">
                             Main Building
                         </td>
+                        <td>FormScaff</td>
                         <td>
                             567899
                         </td>
                         <td>
-                            02/01/2015
-                        </td>
-                        <td>
-                            15/08/2015
+                            300
                         </td>
                         <td class="numeric">
                             7,896
@@ -177,7 +162,6 @@
                         <td class="numeric">
                             4,325
                         </td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -185,22 +169,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Shopping Mall
+                            <button class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i></button>
                         </td>
                         <td>
-                            Ground Floor
+                            13/02/2015
                         </td>
                         <td class="numeric">
                             West Wing
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             392677
                         </td>
-                        <td>
-                            01/01/2015
-                        </td>
-                        <td>
-                            <span class="label label-danger">15/01/2015</span>
+                        <td class="numeric">
+                            200
                         </td>
                         <td class="numeric">
                             1,435
@@ -208,7 +192,6 @@
                         <td class="numeric">
                             235
                         </td>
-                        <td><span class="label label-danger">collection overdue</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -216,22 +199,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Umhlanga Home
+                            <button class="btn btn-success btn-lg"><i class="fa fa-sign-out fa-rotate-180"></i></button>
                         </td>
                         <td>
-                            47 Rock Drive
+                            20/02/2015
                         </td>
                         <td class="numeric">
                             Main House
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             3981275
                         </td>
                         <td>
-                            20/02/2015
-                        </td>
-                        <td>
-                            14/09/2015
+                            240
                         </td>
                         <td class="numeric">
                             789
@@ -239,7 +222,6 @@
                         <td class="numeric">
                             4,987
                         </td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -247,22 +229,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Shopping Mall
+                            <button class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i></button>
                         </td>
                         <td>
-                            Site Two
+                            01/03/2015
                         </td>
                         <td class="numeric">
                             Main Building
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             23577
                         </td>
                         <td>
-                            18/02/2015
-                        </td>
-                        <td>
-                            01/05/2015
+                            51
                         </td>
                         <td class="numeric">
                             5,112
@@ -270,7 +252,6 @@
                         <td class="numeric">
                             455
                         </td>
-                        <td><span class="label label-warning">partially collected</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -278,22 +259,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            <button class="btn btn-success btn-lg"><i class="fa fa-sign-out fa-rotate-180"></i></button>
                         </td>
                         <td>
-                            Site Two
+                            05/03/2015
                         </td>
                         <td class="numeric">
                             North Building
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             3467468
                         </td>
                         <td>
-                            20/04/2015
-                        </td>
-                        <td>
-                            13/08/2015
+                            80
                         </td>
                         <td class="numeric">
                             7,231
@@ -301,7 +282,6 @@
                         <td class="numeric">
                             3,447
                         </td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -309,22 +289,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            <button class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i></button>
                         </td>
                         <td>
-                            Site One
+                            19/03/2015
                         </td>
                         <td class="numeric">
                             Main Building
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             4578699
                         </td>
                         <td>
-                            30/01/2015
-                        </td>
-                        <td>
-                            09/09/2015
+                            500
                         </td>
                         <td class="numeric">
                             698
@@ -332,7 +312,6 @@
                         <td class="numeric">
                             654
                         </td>
-                        <td><span class="label label-success">all collected</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -340,22 +319,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Shopping Mall Project
+                            <button class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i></button>
                         </td>
                         <td>
-                            Site One
+                            29/03/2015
                         </td>
                         <td class="numeric">
                             Complex 1
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             34684367
                         </td>
                         <td>
-                            20/02/2015
-                        </td>
-                        <td>
-                            05/06/2015
+                            30
                         </td>
                         <td class="numeric">
                             65
@@ -363,7 +342,6 @@
                         <td class="numeric">
                             721
                         </td>
-                        <td><span class="label label-success">all collected</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -371,22 +349,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Project One
+                            <button class="btn btn-success btn-lg"><i class="fa fa-sign-out fa-rotate-180"></i></button>
                         </td>
                         <td>
-                            Site Two
+                            01/04/2015
                         </td>
                         <td class="numeric">
                             South Building
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             22334548
                         </td>
                         <td>
-                            13/01/2015
-                        </td>
-                        <td>
-                            01/09/2015
+                            134
                         </td>
                         <td class="numeric">
                             300
@@ -394,7 +372,6 @@
                         <td class="numeric">
                             711
                         </td>
-                        <td><span class="label label-warning">partially collected</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -402,22 +379,22 @@
                     </tr>
                     <tr>
                         <td>
-                            Unhlanga Home Project
+                            <button class="btn btn-success btn-lg"><i class="fa fa-sign-out fa-rotate-180"></i></button>
                         </td>
                         <td>
-                            47 Rock Drive
+                            30/04/2015
                         </td>
                         <td class="numeric">
                             Main House
                         </td>
                         <td>
+                            FormScaff
+                        </td>
+                        <td>
                             56890268
                         </td>
                         <td>
-                            01/03/2015
-                        </td>
-                        <td>
-                            06/09/2015
+                            468
                         </td>
                         <td class="numeric">
                             733
@@ -425,7 +402,6 @@
                         <td class="numeric">
                             112
                         </td>
-                        <td><span class="label label-info">all on site</span></td>
                         <td>
                             <span data-ng-include="'views/headerActionButton.html'"></span>
                         </td>
@@ -434,7 +410,8 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th colspan="6" class="text-right">Totals: </th>
+                        <th colspan="5" class="text-right">Totals:</th>
+                        <th>1,567</th>
                         <th>23, 456</th>
                         <th>14, 422</th>
                         <th colspan="2"></th>

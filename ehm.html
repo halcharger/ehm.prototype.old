@@ -24,6 +24,7 @@
     <!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
     <link href="styles/datepicker3.css" rel="stylesheet" type="text/css">
     <link href="styles/pricing-tables.css" rel="stylesheet" type="text/css">
+    <link href="styles/timeline.css" rel="stylesheet" type="text/css">
 
     <link href="styles/components-rounded.css" rel="stylesheet" type="text/css">
     <link href="styles/plugins.css" rel="stylesheet" type="text/css">
@@ -73,14 +74,8 @@
             <div class="hor-menu">
                 <ul class="nav navbar-nav">
                     <li class="menu-dropdown mega-menu-dropdown">
-                        <a href="#/dashboard" class="dropdown-toggle">
-                            <i class="fa fa-area-chart"></i>
-                            Dashboard
-                        </a>
-                    </li>
-                    <li class="menu-dropdown mega-menu-dropdown">
                         <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
-                            <i class="fa fa-cubes"></i> Projects <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-area-chart"></i> Project Dashboards <i class="fa fa-angle-down"></i>
                         </a>
 
                         <ul class="dropdown-menu">
@@ -91,21 +86,21 @@
                                             <ul class="mega-menu-submenu">
                                                 <li>
                                                     <a href="#/projects" class="iconify">
-                                                        <i class="fa fa-cubes"></i>
-                                                        All Projects </a>
+                                                        <i class="fa fa-area-chart"></i>
+                                                        All Projects</a>
                                                 </li>
                                                 <li>
-                                                    <a href="" class="iconify">
+                                                    <a href="#/dashboard" class="iconify">
                                                         <i class="fa fa-pencil"></i>
                                                         Project One </a>
                                                 </li>
                                                 <li>
-                                                    <a href="" class="iconify">
+                                                    <a href="#/dashboard" class="iconify">
                                                         <i class="fa fa-pencil"></i>
                                                         Shopping Mall Project </a>
                                                 </li>
                                                 <li>
-                                                    <a href="" class="iconify">
+                                                    <a href="#/dashboard" class="iconify">
                                                         <i class="fa fa-pencil"></i>
                                                         Umhlanga Home Project </a>
                                                 </li>
@@ -123,9 +118,14 @@
                     </li>
                     <li class="menu-dropdown mega-menu-dropdown">
                         <a href="#/alldeliveries" class="dropdown-toggle">
-                            <i class="fa fa-sign-in"></i>
-                            <i class="fa fa-sign-out"></i>
-                            All Deliveries & Collections
+                            <i class="fa fa-calculator"></i>
+                            Quotes / Planning
+                        </a>
+                    </li>
+                    <li class="menu-dropdown mega-menu-dropdown">
+                        <a href="#/movements" class="dropdown-toggle">
+                            <i class="fa fa-exchange"></i>
+                            Movements
                         </a>
                     </li>
                     <li class="menu-dropdown mega-menu-dropdown">

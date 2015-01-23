@@ -10,8 +10,8 @@ app.config(function ($routeProvider) {
         .when('/', {
             templateUrl: 'views/dashboard.html'
         })
-        .when('/alldeliveries', {
-            templateUrl: 'views/alldeliveries.html'
+        .when('/movements', {
+            templateUrl: 'views/movements.html'
         })
         .when('/projects', {
             templateUrl: 'views/projects.html'
